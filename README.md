@@ -9,5 +9,10 @@ __Notes:__
 - Run the `build.sh` script to pack all files into one single file. `require` and `package.path` will be removed in the resulting file.
 - After running the build script, load the generated .lua file into TIC-80 PRO and save as a .tic file with `save demo.tic`.
 
+__Tools:__
+
+- [File to C style array converter](https://notisrac.github.io/FileToCArray/) to convert assets.
+- Gradients were created with [Gradient Blaster](https://gradient-blaster.grahambates.com) by Gigabates/DESiRE.
+
 ---
 Olympian / Spectrox, 2025
