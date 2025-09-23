@@ -1,6 +1,7 @@
 # Spectrox - Prelude to Neobyte
 
 This repo contains all the source code and assets of "Prelude to Neobyte", a TIC-80 demo by Spectrox.
+Code and graphics by Olympian / Spectrox and music by Virgill / Alcatraz.
 
 __Notes:__
 
@@ -12,7 +13,7 @@ __Notes:__
 __Tools:__
 
 - [File to C style array converter](https://notisrac.github.io/FileToCArray/) to convert assets.
-- Gradients were created with [Gradient Blaster](https://gradient-blaster.grahambates.com) by Gigabates/DESiRE.
+- Gradients were created with [Gradient Blaster](https://gradient-blaster.grahambates.com) by Gigabates / DESiRE.
 
 ---
 Olympian / Spectrox, 2025
