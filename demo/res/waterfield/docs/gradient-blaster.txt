@@ -1,0 +1,5 @@
+Background, 408px:
+https://gradient-blaster.grahambates.com/?points=143464@23,0a1a32@183,050d19@366,000000@407&steps=408&blendMode=oklab&ditherMode=goldenRatio&target=amigaOcsLace&ditherAmount=38
+
+Bubbles, 136px:
+https://gradient-blaster.grahambates.com/?points=136@0,2dc@78,2dc@111,0ab@135&steps=136&blendMode=oklab&ditherMode=errorDiffusion&target=amigaOcs&ditherAmount=78

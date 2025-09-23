@@ -1,0 +1,5 @@
+Lakes1, 136px:
+https://gradient-blaster.grahambates.com/?points=012@0,115@15,739@34,c59@53,ecc@71,25c@94,136@112,012@135&steps=136&blendMode=oklab&ditherMode=shuffle&target=amigaOcs&shuffleCount=1
+
+Lakes2, 136px:
+https://gradient-blaster.grahambates.com/?points=0a1526@0,0f2445@79,0a1526@135&steps=136&blendMode=lab&ditherMode=shuffle&target=amigaAga&shuffleCount=2

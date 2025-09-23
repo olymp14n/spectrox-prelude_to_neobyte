@@ -1,0 +1,8 @@
+Underwater BG, 136px
+https://gradient-blaster.grahambates.com/?points=38c3bc@0,177189@135&steps=136&blendMode=oklab&ditherMode=shuffle&target=amigaOcsLace&shuffleCount=2
+
+Underwater BG, 272px
+https://gradient-blaster.grahambates.com/?points=000000@0,38c3bc@136,00c4bf@143,177189@271&steps=272&blendMode=oklab&ditherMode=shuffle&target=amigaOcsLace&shuffleCount=2
+
+Underwater BG, 204px
+https://gradient-blaster.grahambates.com/?points=000000@0,11152f@21,38c3bc@63,00c4bf@68,177189@203&steps=204&blendMode=oklab&ditherMode=shuffle&target=amigaOcsLace&shuffleCount=2
