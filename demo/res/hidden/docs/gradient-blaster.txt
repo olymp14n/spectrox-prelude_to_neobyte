@@ -1,0 +1,2 @@
+Hidden Part, 136px:
+https://gradient-blaster.grahambates.com/?points=126@0,314@24,624@45,777@68,416@97,126@135&steps=136&blendMode=linear&ditherMode=shuffle&target=atariSt&shuffleCount=1

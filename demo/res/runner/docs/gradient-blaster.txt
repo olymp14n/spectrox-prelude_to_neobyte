@@ -1,0 +1,15 @@
+Skyline BG, Bright, 136px:
+https://gradient-blaster.grahambates.com/?points=000000@0,172038@15,3c5e8b@44,c65197@70,ebede9@77,172038@77,000000@135&steps=136&blendMode=oklab&ditherMode=shuffle&target=amigaOcsLace&shuffleCount=1
+
+Skyline BG, Dark, 136px:
+https://gradient-blaster.grahambates.com/?points=000000@0,000000@31,112650@66,c65196@73,ebede9@77,172038@77,000000@135&steps=136&blendMode=oklab&ditherMode=shuffle&target=amigaOcsLace&shuffleCount=1
+
+Sun, 136px:
+https://gradient-blaster.grahambates.com/?points=ffc@0,fa1@28,b49@56,738@82,136@102,012@135&steps=136&blendMode=oklab&ditherMode=errorDiffusion&target=amigaOcs&ditherAmount=39
+
+
+Windows, 136px:
+https://gradient-blaster.grahambates.com/?points=145283@3,249fde@66,239ede@70,145283@132&steps=136&blendMode=linear&ditherMode=off&target=amigaAga
+
+Back Layer & Floor, 136px:
+https://gradient-blaster.grahambates.com/?points=405e99@0,3f5d99@71,143464@74,133464@86,296bcf@105,133464@127&steps=136&blendMode=linear&ditherMode=errorDiffusion&target=amigaAga&ditherAmount=40
