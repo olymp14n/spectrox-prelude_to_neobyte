@@ -4940,7 +4940,6 @@ RES_HMAP={
 122,78,52,51,27,4,0,7,15,18,22,15,15,40,45,66,64,54,50,44,47,40,32,30,9,4,14,52,98,93,98,113,115,110,76,58,73,62,56,47,36,27,33,28,25,34,52,41,11,20,20,43,52,24,32,35,50,41,17,8,27,67,59,63,108,159,127,101,68,37,34,16,10,12,13,14,18,23,37,63,118,166,187,175,116,99,81,45,62,95,104,77,73,101,115,122,126,129,135,105,55,46,20,3,7,27,50,66,52,58,39,25,32,40,50,43,58,78,66,50,37,28,28,41,66,84,98,113
 }
 
-
 -------------------------------------------------------------------------------
 --- CONSTANTS
 -------------------------------------------------------------------------------
@@ -5119,74 +5118,65 @@ _shadowCastEnabled = {
     true, -- 6
     true, -- 7
     true, -- 8
-    true, -- 9
 }
 
 _shadowCastPosBase = {
-    nil,          -- 1 BORDER
-    { 0,   0 },   -- 2 CUBE (must match _cubeIdx)
-    { 58,  69 },  -- 3 BRICK 1
-    { 50,  23 },  -- 4 BRICK 2
-    { 158, 35 },  -- 5 BRICK 3
-    { 108, 12 },  -- 6 BRICK 4
-    { 175, 102 }, -- 7 BRICK 5
-    { 131, 91 },  -- 8 BRICK 6 (multiple)
-    { 2,   102 }, -- 9 BRICK 7
+    { 0,   0 },   -- 1 CUBE (must match _cubeIdx)
+    { 58,  69 },  -- 2 BRICK 1
+    { 50,  23 },  -- 3 BRICK 2
+    { 158, 35 },  -- 4 BRICK 3
+    { 108, 12 },  -- 5 BRICK 4
+    { 175, 102 }, -- 6 BRICK 5
+    { 131, 91 },  -- 7 BRICK 6 (multiple)
+    { 2,   102 }, -- 8 BRICK 7
 }
 _shadowCastPos = core_util_deep_copy(_shadowCastPosBase)
 
-_shadowCubeIdx = 2               -- Index of cube in _polysTemplate.
+_shadowCubeIdx = 1               -- Index of cube in _polysTemplate.
 _shadowCubeColors = { 9, 14, 2 } -- Colors of the cube lines. First one is the non-glitching one.
 
 _polys = nil
 _polysTemplate = {
     {
-        -- 1: Border. Lightmap is 256 so give space for additional 128.
-        { -128,             -128 },
-        { -128,             CORE_HEIGHT + 128 },
-        { CORE_WIDTH + 128, CORE_HEIGHT + 128 },
-        { CORE_WIDTH + 128, -128 }
+        -- 1: CUBE (Dummy)
     },
     {
-        -- 2: CUBE (Dummy)
-    },
-    {
-        -- 3: BRICK 1
+        -- 2: BRICK 1
         { 0,  0 },
         { 0,  10 },
         { 25, 10 },
         { 25, 0 },
     },
     {
-        -- 4: BRICK 2
+        -- 3: BRICK 2
         { 0,  0 },
         { 0,  11 },
         { 18, 11 },
         { 18, 0 },
     },
     {
-        -- 5: BRICK 3
+        -- 4: BRICK 3
         { 0,  0 },
         { 0,  10 },
         { 17, 10 },
         { 17, 0 },
     },
     {
-        -- 6: BRICK 4
+        -- 5: BRICK 4
         { 0,  0 },
         { 0,  10 },
         { 18, 10 },
         { 18, 0 },
     },
     {
-        -- 7: BRICK 5
+        -- 6: BRICK 5
         { 0,  0 },
         { 0,  10 },
         { 18, 10 },
         { 18, 0 },
     },
     {
-        -- 8: BRICK 6
+        -- 7: BRICK 6
         { 0,  0 },
         { 0,  10 },
         { 7,  10 },
@@ -5201,7 +5191,7 @@ _polysTemplate = {
         { 18, 0 },
     },
     {
-        -- 9: BRICK 7
+        -- 8: BRICK 7
         { 0,  0 },
         { 0,  10 },
         { 18, 10 },
@@ -8191,12 +8181,7 @@ function renderShadowScene(t)
 
     -- Ugly: re-init everything because segments might have been skipped.
     _segments = {}
-    _rays = {}
-    _uniqueRays = {}
-
     polysToSegments(_polys, _segments) -- Always needed, regardless of re-init.
-    initRays(_rays, _segments)
-    initUniqueRays(_uniqueRays, _rays)
 
     updateRays(_rays, _segments)
     updatIntersects(_rays, _segments)
@@ -8208,7 +8193,6 @@ function renderShadowScene(t)
     vbank(1)
     cls(0)
     renderCube()
-
     ---
     vbank(0)
 end
