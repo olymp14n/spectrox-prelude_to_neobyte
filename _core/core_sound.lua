@@ -47,7 +47,7 @@ end
 ---                  	bank: The bank number starting at 0
 ---                  	track: The track number starting at 0
 ---                  	pattern: Number of the pattern to play. -1 for first pattern.
----                  	rowFired: Number of the row to play. -1 for first row.
+---                  	row: Number of the row to play. -1 for first row.
 ---                  	lastPattern: This is the last pattern of the track. -1 for default.
 ---                  	lastRow: This is the last row of the lastPattern of the track. After this the track will be changed. -1 for default.
 --- 				 EXAMPLE:
@@ -91,3 +91,4 @@ end
 function core_sound_stop()
 	music()
 end
+
